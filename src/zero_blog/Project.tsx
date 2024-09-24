@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 const Project = () => {
   const navigate = useNavigate();
   return (
-    <div className="flex flex-col w-full max-w-5xl mx-auto gap-10 p-10  shadow-lg rounded-lg">
+    <div className="flex flex-col w-full max-w-5xl mx-auto gap-10 p-10 border shadow-lg rounded-lg">
       {/* 헤더 */}
       <div className="text-center mb-5">
         <h1 className="text-3xl font-bold ">Projects Overview</h1>

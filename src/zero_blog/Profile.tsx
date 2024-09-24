@@ -1,6 +1,6 @@
 const Profile = () => {
   return (
-    <div className="flex flex-col w-full max-w-md mx-auto p-6  shadow-lg rounded-lg">
+    <div className="flex flex-col w-full max-w-md mx-auto p-6 border shadow-md rounded-lg">
       <h2 className="text-2xl font-semibold mb-4 text-center">Profile</h2>
       <div className="flex justify-between items-center border-b-2 border-gray-300 pb-2 mb-4">
         <div className="text-lg font-medium">Name</div>
