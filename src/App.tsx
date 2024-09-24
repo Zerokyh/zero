@@ -1,25 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./zero_blog/Home";
+import LayoutZero from "./zero_blog/LayoutZero";
+import Login from "./zero_blog/Login";
+import Register from "./zero_blog/Register";
+import Profile from "./zero_blog/Profile";
+import Career from "./zero_blog/Career";
+import Project from "./zero_blog/Project";
+import ProjectStudent from "./zero_blog/ProjectStudent";
+import ProjectPtt from "./zero_blog/ProjectPtt";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // router
+    <BrowserRouter>
+      <Routes>
+        <Route element={<LayoutZero />}>
+          <Route path="/" Component={Home} />
+          <Route path="/Login" Component={Login} />
+          <Route path="/Register" Component={Register} />
+          <Route path="/Profile" Component={Profile} />
+          <Route path="/Career" Component={Career} />
+          <Route path="/Project" Component={Project} />
+          <Route path="/ProjectStudent" Component={ProjectStudent} />
+          <Route path="/ProjectPtt" Component={ProjectPtt} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
