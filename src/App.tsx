@@ -1,5 +1,5 @@
 // import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Home from "./zero_blog/Home";
 import LayoutZero from "./zero_blog/LayoutZero";
 import Login from "./zero_blog/Login";
@@ -14,18 +14,20 @@ function App() {
   return (
     // router
     // <BrowserRouter>
-    <Routes>
-      <Route element={<LayoutZero />}>
-        <Route path="/" Component={Home} />
-        <Route path="/Login" Component={Login} />
-        <Route path="/Register" Component={Register} />
-        <Route path="/Profile" Component={Profile} />
-        <Route path="/Career" Component={Career} />
-        <Route path="/Project" Component={Project} />
-        <Route path="/ProjectStudent" Component={ProjectStudent} />
-        <Route path="/ProjectPtt" Component={ProjectPtt} />
-      </Route>
-    </Routes>
+    <HashRouter>
+      <Routes>
+        <Route element={<LayoutZero />}>
+          <Route path="/" Component={Home} />
+          <Route path="/Login" Component={Login} />
+          <Route path="/Register" Component={Register} />
+          <Route path="/Profile" Component={Profile} />
+          <Route path="/Career" Component={Career} />
+          <Route path="/Project" Component={Project} />
+          <Route path="/ProjectStudent" Component={ProjectStudent} />
+          <Route path="/ProjectPtt" Component={ProjectPtt} />
+        </Route>
+      </Routes>
+    </HashRouter>
     // </BrowserRouter>
   );
 }
