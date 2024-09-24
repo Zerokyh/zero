@@ -8,7 +8,6 @@ const Project = () => {
       <div className="text-center mb-5">
         <h1 className="text-3xl font-bold ">Projects Overview</h1>
       </div>
-
       {/* 프로젝트별 그룹화 */}
       <div className="flex flex-col gap-10">
         {/* 첫 번째 프로젝트 (4개월차) */}
