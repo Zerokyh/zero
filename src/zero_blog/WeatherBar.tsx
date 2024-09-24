@@ -52,7 +52,7 @@ const WeatherBar = () => {
     };
 
     fetchWeatherData();
-  }, []);
+  }, [setWeather]);
   const WeatherIcon = weatherIcons[loading ? "Loading" : weather];
 
   return (
