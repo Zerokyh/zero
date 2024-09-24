@@ -52,7 +52,7 @@ const WeatherBar = () => {
 
   useEffect(() => {
     fetchWeatherData();
-  }, []);
+  }, [fetchWeatherData]);
   const WeatherIcon = weatherIcons[loading ? "Loading" : weather];
 
   return (
